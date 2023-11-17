@@ -28,7 +28,7 @@ function StudentsScreen() {
 
 export default function App() {
   return (
-   // <SafeAreaView style={styles.container}> 
+   
       <NavigationContainer> 
         <Tab.Navigator initialRouteName="Accounts"  screenOptions={({ route }) => ({
           tabBarIcon: ({ focused}) => {
@@ -44,7 +44,7 @@ export default function App() {
               iconName = focused ? 'school': 'school-outline';
             }
 
-            // You can return any component that you like here!
+             
             return <Ionicons name={iconName} size={30} color={'#4e85bf'} />;
           },
           
@@ -56,7 +56,7 @@ export default function App() {
       </Tab.Navigator>
       <StatusBar style="auto" />
       </NavigationContainer>
-   //</SafeAreaView>
+   
   );
 }
 
